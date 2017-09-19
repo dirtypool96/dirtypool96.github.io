@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[Java程序基本概念]]></title>
+      <url>%2F2017%2F09%2F18%2FJava%E7%A8%8B%E5%BA%8F%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%2F</url>
+      <content type="text"><![CDATA[Java第二课由于重学的原因，各种环境配置省略。 数据类型划分以及其操作基本数据类型：数值型：表示整数或小数 整型：byte、short、int、long 默认值为：0 浮点型：float、double 默认值：0.0 平时浮点型用double就行 long用来表示日期时间、内存或文件大小（字节） 如果需要进行编码转换或者二进制数据传输使用byte（-128～127） 字符型：char 默认值：\u0000 布尔型：boolean 默认值：false 引用数据类型： 数组、类、接口 默认值：null 数据的转换不同数据类型需要进行转换： 1234567891011byte a = 3;a = (byte)(a + 2);//需要进行强制转换//float 和 int 运算结果为 float （都为48位）System.out.println('a'+1) ;//结果为 98 //因为97 对应 字母aSystem.out.println((char)('a'+1)) ;//结果为b//65 对应 大写的A 操作符算数运算符123int x = 4270;x = x /1000 * 1000;//结果为4000 12System.out.println(-1%5);//结果为左边（只要比右边小 两个中有负数也是左边） 12345int a =3,b;b = a++;//先赋值再自增 如果++a先加再赋值(--原理相同)System.out.println(b);System.out.println(a);//结果为3 4 转义字符 通过 \ 来转变后面字母或者符号的含义。 \n:换行。 \b:退格。相当于backspace。 \r:按下回车键。window系统，回车符是由两个字符来表示\r\n. \t:制表符。相当于tab键。 在字符串中加上双引号 则(“\”hello\””) (“\hello\“)结果为 \hello\ 逻辑运算符&amp; : 只要两边的boolean表达式结果，有一个为false。那么结果就是false。 只有两边都为true，结果为true。 &amp;:无论左边是true是false。右边都运算。 &amp;&amp;:当左边为false时，右边不运算。 | : 两边只要有一个为true，结果为true。 只有两边都有false，结果为false。 |：两边都参与运算。 ||：当左边为true。右边不运算。 ^ : 两边相同结果是false。 两边不同结果是true。 位运算 左移：3&lt; 3*(2的2次方）= 12 右移：6&gt;&gt;2 –&gt; 6/(2的2次方）= 1 “&gt;&gt;”位移需要看最高位的数 是什么补什么 “&gt;&gt;&gt;”无论最高位是什么 右移后都用0补 与-或-异或：]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Java的主要特点]]></title>
       <url>%2F2017%2F09%2F18%2FJava%E7%9A%84%E4%B8%BB%E8%A6%81%E7%89%B9%E7%82%B9%2F</url>
       <content type="text"><![CDATA[Java第一课 Java运行机制 Java是编译型和解释型的语言 Java的源文件 .java 编译过后，形成.class的字节码文件，而后在Java虚拟机（JVM）去解释。 Java是两种语言的结合 编译命令：javac.exe 解释命令：java.exe 最核心的部分就是JVM，依靠JVM实现平台的移植。 特点 Java具备可移植性 Java开发足够简单 Java支持多线程编程 Java支持自动垃圾收集处理 Java是一门面向对象编程语言]]></content>
