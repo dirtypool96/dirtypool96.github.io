@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[Java面试总结]]></title>
+      <url>%2F2017%2F10%2F12%2FJava%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93%2F</url>
+      <content type="text"><![CDATA[Java面试总结 ##]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Java语句]]></title>
       <url>%2F2017%2F09%2F19%2FJava%E8%AF%AD%E5%8F%A5%2F</url>
       <content type="text"><![CDATA[Java第三课主讲 循环、判断、选择语句。 判断if的条件判断语句if else 结构 简写格式： 变量 = (条件表达式)?表达式1：表达式2； 简写格式： 好处：可以简化if else代码。 弊端：因为是一个运算符，所以运算完必须要有一个结果。 1234567int a = 9,b;b = (a&gt;1)?100:200;//等同于 if(a&gt;1) b = 100; else b = 200; 选择switch语句 default 都不满足时执行 每个case后都要braek switch只有 byte short int char 这四种类型 12345678910111213141516 int x = 3;switch(x)&#123; default: System.out.println("d"); break; case 4: System.out.println("a"); break; case 6: System.out.println("b"); break; case 2: System.out.println("c"); break;&#125; 循环while语句 while 后不能加分号 do…while语句 执行完 do 后再进行 while 判断 while 后要加分号 至少执行一次 for语句基本语句123456/* for(初始化表达式；循环条件表达式；循环后的操作表达式) &#123; 执行语句； &#125;*/ 注意： 操作表达式是 循环后 的操作。 for循环里的变量作用域只在 循环体 中。 表达式用 “分号” 隔开，多个变量用 “逗号” 隔开。 12for(int x=0,y=0; x&gt;3 ;x++,y++)//无限循环：for(;;) 和 while(true) for嵌套123456789101112131415for (int x=0; x&lt;5 ;x++ )//x&lt;5:因为外循环控制行数。一共5行。 &#123; for (int y=x; y&lt;5 ;y++) &#123; System.out.print("#"); &#125; System.out.println(); &#125; /*输出 ##### #### ### ## # */ 123456789101112131415for (int x=0; x&lt;5 ;x++ ) &#123; for (int y=0 ; y&lt;=x ; y++ ) &#123; System.out.print("#"); &#125; System.out.println(); &#125; /*输出 # ## ### #### ##### */ 123456789101112131415 /*九九乘法表1*1=11*2=2 2*2=41*3=3 2*3=6 3*3=9*/for (int x=1; x&lt;=3 ; x++)&#123; for (int y=1; y&lt;=x; y++) &#123; System.out.print(y+"*"+x+"="+y*x+"\t"); &#125; System.out.println();&#125; break 和 continue break 应用范围：选择结构和循环结构 continue 应用范围：循环结构 特点： break和continue语句作用的范围。 break和continue单独存在时，下面可以有任何语句。因为都执行不到。 continue特点：结束本次循环，继续下一次循环。 break特点：直接结束当前循环 123456789//break： w:for(int x=0; x&lt;3; x++) &#123; for(int y=0; y&lt;4; y++) &#123; System.out.println("x="+x); break w; &#125; &#125; 123456789101112131415161718//continue: for(int x=1; x&lt;=10; x++) &#123; if(x%2==1) continue; System.out.println("x="+x); // 输出 2 4 6 8 &#125; w:for(int x=0; x&lt;3; x++) &#123; for(int y=0; y&lt;4; y++) &#123; System.out.println("x="+x); continue w; &#125; &#125;]]></content>
